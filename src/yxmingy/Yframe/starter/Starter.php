@@ -9,6 +9,10 @@ abstract class Starter extends CommandDispenser
   {
     self::$instance=$this;
   }
+  public static function getInstance():?object
+  {
+    return self::$instance;
+  }
   public static function info(string $message):void
   {
     Server::getInstance()->getLogger()->info($message);
