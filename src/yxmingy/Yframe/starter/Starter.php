@@ -3,7 +3,6 @@ namespace yxmingy\Yframe\starter;
 use pocketmine\Server;
 abstract class Starter extends CommandDispenser
 {
-  protected static $instance;
   //这个一定要在主类执行
   protected function assignInstance()
   {
