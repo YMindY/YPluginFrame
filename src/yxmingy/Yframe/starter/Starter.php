@@ -10,7 +10,7 @@ trait Starter
   {
     self::$instance=$this;
   }
-  public static function getInstance():?object
+  public static function getInstance()
   {
     return self::$instance;
   }
