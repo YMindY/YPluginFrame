@@ -1,8 +1,10 @@
 <?php
 namespace yxmingy\Yframe\starter;
 use pocketmine\Server;
-abstract class Starter extends CommandDispenser
+//PHP特性 Trait
+trait Starter
 {
+  protected static $instance;
   //这个一定要在主类执行
   protected function assignInstance()
   {

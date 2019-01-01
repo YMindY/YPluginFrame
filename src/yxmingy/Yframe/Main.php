@@ -1,29 +1,27 @@
 <?php
 /*
-  Date: 2018.12.12
+  Date: 2019.1.1
   Author: xMing
   Editor: Quoda
-  Poem:
-    手持两把锟斤拷，口中疾呼烫烫烫。
-    脚踏千朵屯屯屯，笑看万物锘锘锘。
-  Mantra: 高内聚，低耦合。
+  Mantra: 新年快乐!
 */
 namespace yxmingy\Yframe;
-class Main extends starter\Starter
+class Main extends CommandDispenser
 {
+  const PLUGIN_NAME = "Yframe";
   public function onLoad()
   {
     self::assignInstance();
     self::dispenseExecutors();
-    self::info("[Yframe] is Loading...");
+    self::info("[".self::PLUGIN_NAME."] is Loading...");
   }
   public function onEnable()
   {
     self::registerListeners();
-    self::notice("[Yframe] is Enabled by xMing!");
+    self::notice("[".self::PLUGIN_NAME."] is Enabled by xMing!");
   }
   public function onDisable()
   {
-    self::warning("[Yframe] is Turned Off.");
+    self::warning("[".self::PLUGIN_NAME."] is Turned Off.");
   }
 }

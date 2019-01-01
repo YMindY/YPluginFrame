@@ -1,5 +1,5 @@
 <?php
-namespace yxmingy\Yframe\starter;
+namespace yxmingy\Yframe;
 use pocketmine\command\
 {Command,CommandSender};
 abstract class CommandDispenser extends ListenerManager

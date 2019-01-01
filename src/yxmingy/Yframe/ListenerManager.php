@@ -1,10 +1,11 @@
 <?php
 /* 注册监听器 */
-namespace yxmingy\Yframe\starter;
+namespace yxmingy\Yframe;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 abstract class ListenerManager extends PluginBase
 {
+  use starter\Starter;
   protected static $instance;
   protected static $namelist = 
   [
