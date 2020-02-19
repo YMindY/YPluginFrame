@@ -1,5 +1,5 @@
 <?php
-namespace yxmingy\Yframe\starter;
+namespace yxmingy\serverinforobot\starter;
 use pocketmine\Server;
 //PHP特性 Trait
 trait Starter

@@ -1,15 +1,8 @@
-name: Yframe
+name: YServerInfoRobot
 api:
 - 3.0.0
 - 4.0.0
-version: '1.0.0_alpha'
+version: '1.0.0'
 load: POSTWORLD
-main: yxmingy\Yframe\Main
-author: xMingcommands:
-  Yframe:
-    description: "主指令"
-    permission: yxmingy.yframe.command
-    usage: "/hs [obj]"
-permissions:
-  yxmingy.yframe.command: 
-    default: op
+main: yxmingy\serverinforobot\Main
+author: xMing
